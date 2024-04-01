@@ -2,6 +2,7 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver import Firefox, FirefoxOptions
 
+
 @pytest.fixture(scope="function")
 def driver():
     opts = FirefoxOptions()

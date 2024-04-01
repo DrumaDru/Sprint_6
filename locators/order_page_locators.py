@@ -1,13 +1,14 @@
 from selenium.webdriver.common.by import By
 
 class OrderPageLocators:
+    SCOOTER_LINK = By.XPATH, ".//*[@alt='Scooter']"
     NAME = By.XPATH, ".//*[@placeholder = '* Имя']"
     SURNAME = By.XPATH, ".//*[@placeholder = '* Фамилия']"
     ADDRESS = By.XPATH, ".//*[@placeholder = '* Адрес: куда привезти заказ']"
     METRO_STATION = By.CLASS_NAME, "select-search__input"
     PHONE = By.XPATH, ".//*[@placeholder = '* Телефон: на него позвонит курьер']"
     BUTTON_NEXT = By.XPATH, ".//*[text()='Далее']"
-    DATE = By.XPATH, ".//*[@placeholder = '* Когда привезти самокат']"git
+    DATE = By.XPATH, ".//*[@placeholder = '* Когда привезти самокат']"
     DURATION = By.CLASS_NAME, 'Dropdown-placeholder'
     BLACK_CHECK_BOX = By.ID, 'black'
     GREY_CHECK_BOX = By.ID, 'grey'
