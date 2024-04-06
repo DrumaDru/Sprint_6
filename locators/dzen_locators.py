@@ -1,4 +1,4 @@
 from selenium.webdriver.common.by import By
 
 class DzenLocators:
-    INPUT_SEARCH = By.XPATH, ".//*[contains(@class, 'dzen-search-arrow-common')]"
+    TAB_MAIN = By.XPATH, ".//*[@class ='navigation-tab__text-3z' and text() = 'Главная']"

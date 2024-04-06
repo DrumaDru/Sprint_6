@@ -1,4 +1,5 @@
-from datetime import datetime
+from datetime import datetime, timedelta
+import random
 
 #ответ на вопросы на главной странице
 answer_text_0 = "Сутки — 400 рублей. Оплата курьеру — наличными или картой."
@@ -17,9 +18,9 @@ surname ='Иванов'
 surname_2 ='Петров'
 address = 'Фрунзенская набережная'
 address_2 = "Лесная"
-metro ='Фрунзенская'
-metro_2 ='Сокольники'
-phone = 89991112233
-phone_2 = 89992223344
-get_date = datetime.now().date()
-current_date = get_date.strftime('%d.%m.%Y')
+random_phone = str(random.randint(1111111, 9999999))
+phone = '8901'+random_phone
+today = datetime.now().date()
+tomorrow = today+timedelta(days=1)
+today_date = today.strftime('%d.%m.%Y')
+tomorrow_date = tomorrow.strftime('%d.%m.%Y')
